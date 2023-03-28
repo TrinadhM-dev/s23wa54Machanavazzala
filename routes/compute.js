@@ -12,9 +12,9 @@ router.get('/',function(req,res,next){
         let result = Math.hypot(x,y );
         let result2 = Math.ceil(x);
         let result3 = Math.clz32(x);
-        res.send(`Math.hypot() of ${x} is ${result}
-        Math.ceil() of ${x} is ${result2}
-        Math.clz32() of ${x} is ${result3}
+        res.send(`Math.hypot() applied to ${x} is ${result} \n
+        Math.ceil() applied to ${x} is ${result2}\n
+        Math.clz32() applied to ${x} is ${result3}\n
         `);
     }
     else {
@@ -22,10 +22,9 @@ router.get('/',function(req,res,next){
         let result = Math.hypot(x,y);
         let result2 = Math.ceil(x);
         let result3 = Math.clz32(x);
-        res.send(`Math.hypot() of ${x}is ${result}
-        Math.ceil() of ${x} is ${result2}
-        Math.clz32() of ${x} is ${result3}
+        res.send(`Math.hypot() applied to ${x}is ${result}
+        Math.ceil() applied to ${x} is ${result2}
+        Math.clz32() applied to ${x} is ${result3}
         `);
     }
 })
-module.exports = router;
